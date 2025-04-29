@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+    background-color: #9C8181;
+}
+
+.logo {
+    height: 80px;
+    padding: 20px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.fa-bars {
+    display: block;
+    font-size: 2em;
+    color:#403B3B;
+    margin: 10px 50px;
+}
+
+#hamburger-menu,
+nav,
+nav .fa-magnifying-glass,
+nav .fa-cart-shopping {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+header {
+    position: relative;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: #292929;
+}
+
+nav {
+    position: absolute;
+    background-color: #9C8181;
+    padding: 5px;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #6c6b6b;
+}
+
+.footer-desktop {
+    display: none;
+}
+
+.footer-mobile {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 3em;
+    color: #403B3B;
+    padding: 20px;
+}
+
+.footer-mobile a {
+    color: #403B3B ;
+}
+
+.breadcrumb {
+    color: #292929;
+    padding: 10px 20px;
+}
+
+.breadcrumb a::after {
+    content: "/";
+    margin-left: 5px;
+}
+
+.breadcrumb a:last-child:after {
+    content: "";
+}
+
+.active-crumb {
+    font-weight: bold;       
+}
+
+a {
+    text-decoration: none;
+    color: #292929;
+}
+
+.cta {
+    background-color: #292929;
+    font-size: 1em;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 15px;
+}

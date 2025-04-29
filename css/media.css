@@ -1,0 +1,125 @@
+@media (min-width: 700px){
+    nav {
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+        width: 70%;
+    }
+  
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a,
+    nav .fa-magnifying-glass,
+    nav .fa-cart-shopping {
+        display: inline-block;
+    }
+
+    footer li{
+        display: inline-block;
+        text-align: center;
+        font-size: 1em;
+        padding: 0px 5px;
+    }
+    
+    footer p {
+        font-size: 0.7em;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+
+    .footer-desktop {
+        display: block;
+    }
+
+    .order {
+        border: 0.5px solid #000;
+    }
+
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px){
+    .homepage {
+        background-image: url('background-images/camera_roll.png'), url('background-images/camera.png');
+        background-repeat: repeat-x, no-repeat;
+        background-position: center 85%, 75% bottom;
+        background-size: 50%, 350px auto;
+    }
+
+    .welcome {
+        font-size: 2em;
+        margin: 90px 100px;
+    }
+
+    .welcome p {
+        font-size: 1em;
+        padding: 10px;
+        max-width: 400px;
+    }
+
+    .cta-large {
+        display: none;
+    }
+
+    .about__content,
+    .contact__content {
+        font-size: 16px;
+        margin: 60px 100px;
+        max-width: 470px;
+    }
+
+    .about-page {
+        background-repeat: no-repeat;
+        background-position: 75% bottom;
+        background-size: 350px auto;
+    }
+ 
+    .contact-page {
+        background-image: url('background-images/telephone.png');
+        background-position: 60% 80%;
+        background-size: 700px auto;
+    }
+
+    .form-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-information,
+    .cart {
+        margin: auto 2px;
+    }
+
+    .videos {
+        grid-template-columns: repeat(4,1fr);
+     }
+
+    .product-specific {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 20px;
+     }
+
+    .product-specific__details {
+        padding: 20px;
+    }
+
+    .product-specific__image img {
+        width: 300px;
+    }
+}     

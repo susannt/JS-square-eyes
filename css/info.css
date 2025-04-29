@@ -1,0 +1,28 @@
+/* About */
+
+.about__content {
+    font-size: 12px;
+    margin: 20px;
+    max-width: 480px;
+}
+
+.about-page {
+    background-image: url('background-images/camera.png');
+    background-repeat: no-repeat;
+    background-position: 10% bottom;
+    background-size: 240px auto;
+}
+
+/* Contact*/
+
+.contact__content {
+    font-size: 12px;
+    margin: 20px;
+}
+
+.contact-page {
+    background-image: url('background-images/telephone-half.png');
+    background-repeat: no-repeat;
+    background-position: right 100%;
+    background-size: 400px;
+}

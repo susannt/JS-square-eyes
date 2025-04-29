@@ -1,0 +1,17 @@
+.welcome {
+    margin: 90px 25px;
+}
+
+.welcome__content p {
+    max-width: 210px;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 0px 0px 80px 0px;
+}
+
+.homepage {
+    background-image: url('background-images/camera_roll.png'), url('background-images/camera_flipped.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 80%, bottom right;
+    background-size: 150%, 200px auto;
+}
