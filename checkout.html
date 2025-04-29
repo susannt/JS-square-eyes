@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Stream unique films, discover exclusice content from independent filmmakers and support their creative journeys." />
+        <title>Square Eyes</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/checkout.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script src="https://kit.fontawesome.com/7cd9684d81.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="images/squareeyes-logo.png" alt="SquareEyes Logo" class="logo"/>
+            </a>
+            <label for="hamburger-menu" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav class="menu">
+                <a href="videos.html">All Videos</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header>
+        <main>
+            <form method="post">
+                <div class="form-wrapper">
+                    <section class="contact-information">
+                        <h2>Contact Information</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+47 12345678">
+                        <label for="street-address">Street Address:</label>
+                        <input type="text" name="street-address" id="street-address" placeholder="123 Example Street ">
+                        <label for="post-code">Post Code:</label>
+                        <input type="text" name="post-code" id="post-code" placeholder="0485">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city" placeholder="Oslo">
+                    </section>
+                    <section class="cart">
+                        <h2><i class="fa-solid fa-cart-shopping"></i> Cart (1) </h2>
+                        <div class="cart__details">
+                            <div>
+                                <a href="sweetheart.html">
+                                    <img src="images/sweetheart.jpeg" alt="sweetheart">
+                                </a>
+                            </div>
+                            <div>
+                                <p>Sweetheart (2019)</p>
+                                <p>$3.99</p>
+                            </div>
+                            <div>
+                                <p><i class="fa-solid fa-trash"></i></p>
+                                <p>- 1 + </p>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <div>
+                                <p>Subtotal</p>
+                                <p class="cart-price__bold">Total</p>
+                            </div>
+                            <div>
+                                <p>$3.99</p>
+                                <p class="cart-price__bold">$3.99</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="confirmation.html" class="cta cta-submit">Place Order</a>
+                        </div>
+                    </section>
+                </div>
+            </form>    
+        </main>
+        <footer>
+            <section class="footer-desktop">
+                <ul>
+                    <li>Instagram: @SquareEyes</li>
+                    <li>Twitter: @SquareEyes</li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+                <p>&copy; 2025 Square Eyes</p>
+            </section>
+            <section class="footer-mobile">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="checkout.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </section>
+        </footer>
+    </body>
+</html>
