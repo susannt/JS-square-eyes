@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Stream unique films, discover exclusice content from independent filmmakers and support their creative journeys." />
-        <title>Square Eyes</title>
+        <meta name="description" content="Stream unique films, discover exclusive content from independent filmmakers and support their creative journeys." />
+        <title>Square Eyes - Confirmation</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/checkout.css">
         <link rel="stylesheet" href="css/media.css">
         <script src="https://kit.fontawesome.com/7cd9684d81.js" crossorigin="anonymous"></script>
+        <script src="js/confirmation.js" defer></script>
     </head>
     <body>
         <header>
@@ -28,28 +29,25 @@
         <main>
             <section class="order">
                 <h1>Thank you for your order!</h1>
-                <p>Order Number: #123456789</p>
+                <p id="order-number">Order number: </p>
                 <div>
-                    <p>Item(s):</p>
+                    <p>Order details:</p>
                     <table>
-                        <tr>
-                            <th>Title</th>
-                            <th>Qty</th>
-                            <th>Price</th>
-                            <th>Total</th>
-                        </tr>
-                        <tr>
-                            <td>Sweetheart (2019)</td>
-                            <td>1</td>
-                            <td>$3.99</td>
-                            <td>$3.99</td>
-                        </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td></td>
-                            <td></td>
-                            <td>$3.99</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-items"></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total</td>
+                                <td id="order-total">0 kr</td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </section>

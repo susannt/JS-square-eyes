@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/products.css">
         <link rel="stylesheet" href="css/media.css">
         <script src="https://kit.fontawesome.com/7cd9684d81.js" crossorigin="anonymous"></script>
+        <script type="module" src="js/api.js"></script>
     </head>
     <body>
         <header>
@@ -31,51 +32,9 @@
                 <a href="videos.html" class="active-crumb">All Videos</a>
             </section>
             <h2>All Videos</h2>
-            <section class="videos">
-                <div class="products">
-                    <img src="images/batman.jpeg" alt="The Batman (2022)">
-                    <h3>The Batman (2022)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <img src="images/godzilla.jpeg" alt="Godzilla (2014)">
-                    <h3>Godzilla (2014)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <img src="images/sweetheart.jpeg" alt="Sweetheart (2019)">
-                    <h3>Sweetheart (2019)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <a href="product.html">
-                        
-                    </a>
-                    <img src="images/hollywood.jpeg" alt="Once Upon a Time in Hollywood (2019)">
-                    <h3>Once Upon a Time in Hollywood (2019)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <img src="images/hobbs-shaw.jpeg" alt="Hobbs & Shaw (2019)">
-                    <h3>Hobbs & Shaw (2019)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <img src="images/scream.jpeg" alt="Scream (1996)">
-                    <h3>Scream (1996)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <img src="images/toystory.jpeg" alt="Toy Story 4 (2019)">
-                    <h3>Toy Story 4 (2019)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-                <div class="products">
-                    <img src="images/addams.jpeg" alt="The Addams Family Halloween (2019)">
-                    <h3>The Addams Family Halloween (2019)</h3>
-                    <a href="product.html" class="cta cta-view">View</a>
-                </div>
-            </section>
+            <label for="genre-select">Genre:</label>
+            <select id="genre-select"></select>
+            <section class="videos" id="movie-list"></section>
         </main>
         <footer>
             <section class="footer-desktop">

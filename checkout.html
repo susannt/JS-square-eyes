@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/checkout.css">
         <link rel="stylesheet" href="css/media.css">
         <script src="https://kit.fontawesome.com/7cd9684d81.js" crossorigin="anonymous"></script>
+        <script src="js/checkout.js" defer></script>
+
     </head>
     <body>
         <header>
@@ -26,57 +28,33 @@
             </nav>
         </header>
         <main>
-            <form method="post">
-                <div class="form-wrapper">
-                    <section class="contact-information">
-                        <h2>Contact Information</h2>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="John Doe">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="johndoe@email.com">
-                        <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="+47 12345678">
-                        <label for="street-address">Street Address:</label>
-                        <input type="text" name="street-address" id="street-address" placeholder="123 Example Street ">
-                        <label for="post-code">Post Code:</label>
-                        <input type="text" name="post-code" id="post-code" placeholder="0485">
-                        <label for="city">City:</label>
-                        <input type="text" name="city" id="city" placeholder="Oslo">
-                    </section>
-                    <section class="cart">
-                        <h2><i class="fa-solid fa-cart-shopping"></i> Cart (1) </h2>
-                        <div class="cart__details">
-                            <div>
-                                <a href="sweetheart.html">
-                                    <img src="images/sweetheart.jpeg" alt="sweetheart">
-                                </a>
-                            </div>
-                            <div>
-                                <p>Sweetheart (2019)</p>
-                                <p>$3.99</p>
-                            </div>
-                            <div>
-                                <p><i class="fa-solid fa-trash"></i></p>
-                                <p>- 1 + </p>
-                            </div>
-                        </div>
-                        <div class="cart-price">
-                            <div>
-                                <p>Subtotal</p>
-                                <p class="cart-price__bold">Total</p>
-                            </div>
-                            <div>
-                                <p>$3.99</p>
-                                <p class="cart-price__bold">$3.99</p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="confirmation.html" class="cta cta-submit">Place Order</a>
-                        </div>
-                    </section>
-                </div>
-            </form>    
+            <div class="form-wrapper">
+                <section class="contact-information">
+                    <h2>Contact Information</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+47 12345678">
+                    <label for="street-address">Street Address:</label>
+                    <input type="text" name="street-address" id="street-address" placeholder="123 Example Street">
+                    <label for="post-code">Post Code:</label>
+                    <input type="text" name="post-code" id="post-code" placeholder="0485">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" placeholder="Oslo">
+                </section>
+                <section class="cart">
+                    <h2><i class="fa-solid fa-cart-shopping"></i> Cart</h2>
+                    <div id="cart-items">
+                    </div>
+                    <div class="cart-price" id="cart-summary"></div>
+                    <button id="empty-cart" class="cta cta-delete" type="button">Empty the cart</button>
+                    <button type="button" class="cta cta-submit" id="place-order">Place Order</button>
+                </section>   
+            </div>
         </main>
+        
         <footer>
             <section class="footer-desktop">
                 <ul>
