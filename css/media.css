@@ -43,10 +43,6 @@
         display: block;
     }
 
-    .order {
-        border: 0.5px solid #000;
-    }
-
     .videos {
         display: grid;
         grid-template-columns: 1fr 1fr;

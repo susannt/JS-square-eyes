@@ -97,7 +97,6 @@ function placeOrder(event) {
     window.location.href = "confirmation.html";
 }
 
-emptyCartButton.addEventListener("click", emptyCart);
 placeOrderButton.addEventListener("click", placeOrder);
 
 renderCart();

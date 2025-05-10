@@ -45,7 +45,7 @@ async function fetchProduct(id) {
     const detailsDiv = document.createElement("div");
     detailsDiv.classList.add("product-specific__details");
 
-    const title = document.createElement("h2");
+    const title = document.createElement("h3");
     title.textContent = `${product.title} (${product.released})`;
 
     const description = document.createElement("p");

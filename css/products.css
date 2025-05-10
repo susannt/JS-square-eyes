@@ -6,15 +6,21 @@ h2 {
     text-align: center;
 }
 
-.products {
+
+h3 {
+    width: 300px;
+}
+
+.videos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 60px;
+    gap: 40px;
 }
 
-.products img {
+.videos img {
     border: 1px;
     box-shadow: 5px 5px 5px;
     width: 200px;

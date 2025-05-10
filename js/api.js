@@ -60,7 +60,7 @@ function showMovies(filterGenre = "all") {
   filteredMovies.forEach(movie => {
     const movieCard = document.createElement("div");
 
-    const title = document.createElement("h2");
+    const title = document.createElement("h3");
     title.textContent = `${movie.title} (${movie.released})`;
 
     const img = document.createElement("img");

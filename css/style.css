@@ -113,3 +113,7 @@ a {
     color: #fff;
     padding: 10px 15px;
 }
+
+button:hover {
+    cursor: pointer;
+}
