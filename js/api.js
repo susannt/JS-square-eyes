@@ -32,7 +32,7 @@ function buildGenreDropdown(genres) {
 
   const defaultOption = document.createElement("option");
   defaultOption.value = "all";
-  defaultOption.textContent = "All";
+  defaultOption.textContent = "All";0
   genreSelect.appendChild(defaultOption);
 
   genres.forEach(genre => {
