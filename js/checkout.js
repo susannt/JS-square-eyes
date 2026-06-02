@@ -5,6 +5,10 @@ const cartSummary = document.getElementById("cart-summary");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+function calculateTotal(cart) {
+    return cart.reduce((sum, product) => sum + Number(product.price), 0);
+}
+
 function renderCart() {
     cartContainer.innerHTML = "";
     cartSummary.innerHTML = "";
@@ -45,7 +49,7 @@ function renderCart() {
         cartContainer.appendChild(productElement);
     });
 
-    const total = cart.reduce((sum, product) => sum + parseFloat(product.price), 0);
+    const total = calculateTotal(cart);
     const totalText = document.createElement("p");
     totalText.textContent = `Total: ${total.toFixed(2)} kr`;
     cartSummary.appendChild(totalText);
@@ -90,7 +94,7 @@ function placeOrder(event) {
         postCode,
         city,
         products: cart,
-        total: cart.reduce((total, product) => total + parseFloat(product.price), 0)
+        total: calculateTotal(cart)        
     };
 
     localStorage.setItem("order", JSON.stringify(order));

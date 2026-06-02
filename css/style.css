@@ -35,6 +35,8 @@ nav .fa-cart-shopping {
     display: none;
 }
 
+nav 
+
 #hamburger-menu:checked ~ nav {
     display: block;
 }
